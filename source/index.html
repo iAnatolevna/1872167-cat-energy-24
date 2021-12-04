@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href="#" aria-current="page">
-        <img class="page-header__logo-image" src="img/logo.svg" width="33" height="38" alt="Логотип магазина Кэт энерджи">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт энерджи">
         <img src="img/logo-name.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
       <nav class="main-nav">
@@ -17,17 +17,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="#" aria-current="page">
+              <a class="main-nav__link" href="#" aria-current="page">
                 главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 подбор программы
               </a>
             </li>
@@ -47,18 +47,16 @@
       </section>
       <section class="catalog-filters">
         <h2 class="visually-hidden">Подбор питания по параметрам</h2>
-        <div class="catalog-filter-wrapper">
-          <div class="catalog-filter">
+        <div class="catalog-filter">
+          <div class="catalog-filter__wrapper">
             <h3 class="catalog-filter__title">похудение</h3>
             <p class="catalog-filter__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <button class="catalog-filter__button" type="button">каталог slim</button>
+            <a class="catalog-filter__link" href="#">каталог slim</a>
           </div>
-          <div class="catalog-filter-wrapper">
-            <div class="catalog-filter">
-              <h3 class="catalog-filter__title">Набор массы</h3>
-              <p class="catalog-filter__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <button class="catalog-filter__button" type="button">каталог pro</button>
-            </div>
+          <div class="catalog-filter__wrapper">
+            <h3 class="catalog-filter__title">Набор массы</h3>
+             <p class="catalog-filter__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+             <a class="catalog-filter__link" href="#">каталог pro</a>
           </div>
         </div>
       </section>
@@ -88,9 +86,9 @@
           <span class="example__cost-text">Затраты на питание:</span>
           <span class="example__cost-sum">15 000 РУБ.</span>
         </div>
-        <div class="example__slider">
-          <img class="slider__image" src="" alt="Толстый кот">
-          <img class="slider__image" src="" alt="Худой кот">
+        <div class="example__slider slider">
+          <img class="slider__image" src="img/cat-before.png" alt="Толстый кот">
+          <img class="slider__image" src="img/cat-after.png" alt="Худой кот">
           <div class="slider__scale">
             <span class="slider__scale-text">было</span>
             <input type="range">
@@ -101,7 +99,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
+        <div class="page-footer__contacts contacts">
           <div class="contacts__address-wrapper">
             <span class="contacts__text">приглашаем к сотрудничеству дилеров!</span>
             <address class="contacts__address"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -115,7 +113,7 @@
             <img src="img/logo-name.svg" width="128" height="24" alt="Кэт энерджи">
           </a>
         </div>
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -128,7 +126,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
